@@ -1,7 +1,7 @@
 [project]
 name = "jev-ultrafast"
-version = "0.1.0"
-description = "A browser agent that chooses instead of generating."
+version = "1.0.0"
+description = "A browser agent with a dynamic indexed action space and zero-API-key AI CLI runner."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12"
@@ -9,6 +9,7 @@ dependencies = ["browser-harness==0.1.13", "httpx[http2]>=0.28,<1"]
 
 [project.scripts]
 jev = "jev_ultrafast.demo:main"
+jev-ag = "jev_ultrafast.cli:main"
 
 [build-system]
 requires = ["hatchling"]
